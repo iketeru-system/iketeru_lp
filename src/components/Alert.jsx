@@ -1,15 +1,12 @@
-import { css } from '@emotion/react'
-import { colors } from '../utilities/styleUtilities'
+import { css } from "@emotion/react";
+import { colors } from "../utilities/styleUtilities";
 
 const Alert = ({ children, status }) => {
-  return (
-    <p css={styles[status]}>
-      {children}
-    </p>
-  )
-}
+  console.log(status);
+  return <p css={styles[status]}>{children}</p>;
+};
 
-export default Alert
+export default Alert;
 
 const generateStyle = (color) => css`
   margin-top: 30px;
@@ -21,9 +18,9 @@ const generateStyle = (color) => css`
   font-size: 18px;
   border-color: ${color};
   color: ${color};
-`
+`;
 
 const styles = {
   success: generateStyle(colors.purple),
-  error: generateStyle(colors.red)
-}
+  error: generateStyle(colors.red),
+};

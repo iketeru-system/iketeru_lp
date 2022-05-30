@@ -1,8 +1,8 @@
-import { css } from '@emotion/react'
-import { colors, mq } from '../utilities/styleUtilities'
-import { StaticImage } from 'gatsby-plugin-image'
-import SubSection from './SubSection'
-import Heading3 from './Heading3'
+import { css } from "@emotion/react";
+import { colors, mq } from "../utilities/styleUtilities";
+import { StaticImage } from "gatsby-plugin-image";
+import SubSection from "./SubSection";
+import Heading3 from "./Heading3";
 
 const Chief = () => {
   return (
@@ -12,8 +12,8 @@ const Chief = () => {
         <div css={styles.media}>
           <div css={styles.image}>
             <StaticImage
-              src='../../images/yuto-ono.jpg'
-              alt='小野 優人'
+              src="../images/yuto-ono.jpg"
+              alt="小野 優人"
               width={300}
               height={300}
             />
@@ -26,20 +26,23 @@ const Chief = () => {
         <div css={styles.content}>
           <ul css={styles.history}>
             <li>Web制作会社で約3年間フロントエンドエンジニアを務める</li>
-            <li>フリーランスとして独立、約1年間、Web開発業務を個人で請け負う</li>
+            <li>
+              フリーランスとして独立、約1年間、Web開発業務を個人で請け負う
+            </li>
             <li>IT企業にて、2年間CTO（最高技術責任者）を務める</li>
-            <li className='current'>
-              独立、イケテルシステムを開業<br />
+            <li className="current">
+              独立、イケテルシステムを開業
+              <br />
               質の高いWebサイトを構築する事業を展開
             </li>
           </ul>
         </div>
       </div>
     </SubSection>
-  )
-}
+  );
+};
 
-export default Chief
+export default Chief;
 
 const styles = {
   chief: css`
@@ -87,7 +90,7 @@ const styles = {
         font-size: 16px;
       }
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         z-index: 1;
         top: 5px;
@@ -102,7 +105,7 @@ const styles = {
         }
       }
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 20px;
         left: 11px;
@@ -119,5 +122,5 @@ const styles = {
         }
       }
     }
-  `
-}
+  `,
+};
